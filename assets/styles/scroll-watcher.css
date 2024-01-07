@@ -1,0 +1,19 @@
+.scroll-watcher {
+  background-color: #2f3e46;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  scale: 0 1;
+  animation: scroll-watcher linear forwards;
+  animation-timeline: scroll();
+  /* to have a custom side for scroll watcher 👇🏽 */
+  transform-origin: left;
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
